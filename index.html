@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue-like Dungeon Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-info">
+            <div>Health: <span id="player-health">100</span></div>
+            <div>Coins: <span id="player-coins">100</span></div>
+        </div>
+        <div id="game-grid"></div>
+        <div id="inventory-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-inventory">&times;</span>
+                <h2>Inventory</h2>
+                <div id="inventory-items"></div>
+                <div id="equipped-items">
+                    <h3>Equipped Items</h3>
+                    <div>Main Hand: <span id="main-hand"></span></div>
+                    <div>Chestplate: <span id="chestplate"></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="shop-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-shop">&times;</span>
+                <h2>Shop</h2>
+                <div>Coins: <span id="shop-player-coins"></span></div>
+                <div id="shop-items"></div>
+            </div>
+        </div>
+        <div id="escape-modal" class="modal">
+            <div class="modal-content">
+                <h2>Game Menu</h2>
+                <button id="restart-game">Restart Game</button>
+                <button id="continue-game">Continue</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
